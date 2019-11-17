@@ -6,7 +6,7 @@ body{
     color: #032F48;
 }
 .wrapper{
-    margin: 0 60px;
+    margin: 0 auto;
     height: 710px   ;
     max-width:1160px;
     width: 100%;
@@ -33,6 +33,14 @@ header{
 .center_menu{
     width:calc(100% - 100px - 65px);
     text-align: center;
+    transition: 0.5s;
+
+}
+.center_menu a:hover{
+    border-bottom: 2px solid #032F48;
+}
+.right_link:hover{
+    border-bottom: 2px solid #032F48;
 }
 header nav a, .right_link{
     color: inherit;
@@ -133,12 +141,12 @@ nav div{
     width: 25px;
     transition: 0.5s;
     filter: contrast(11%);
+    cursor: pointer;
 }
 .pointer_right:hover{
-
     height: 30px;
     width: 30px;
-    filter:none;
+    filter: contrast(11%);
 }
 .pointer_left{
     height: 14px;
@@ -146,17 +154,27 @@ nav div{
     position: absolute;
     top: 316px;
     right: 450px;
+    transition: 0.5s;
+    cursor: pointer;
 }
-.right_img span{
+.pointer_left:hover{
+    height: 30px;
+    width: 30px;
+    filter:none;
+}
+.right_img form button{
     text-align: center;
     position: absolute;
     background-color: #ffffff;
     top: 420px;
     left: 32px;
-    width: 78px;
-    height: 19px;
+    width: 136px;
+    height: 50px;
     padding: 14px 27px;
     font-weight: 900;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
 }
 .bottom_gray_text{
     margin: 38px;
