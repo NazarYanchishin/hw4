@@ -36,25 +36,43 @@ header{
     transition: 0.5s;
 
 }
-.center_menu a:hover{
-    border-bottom: 2px solid #032F48;
+.center_menu a::before{
+    content: "";
+    position: absolute;
+    top: 48px;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    width:0;
+    height:0;
 }
-.right_link:hover{
-    border-bottom: 2px solid #032F48;
+.center_menu a:hover:before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    border-color: #032F48;
+    background-color: #032F48;
+}
+.right_link::before{
+    content: "";
+    position: absolute;
+    top: 48px;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    width:0;
+    height:0;
+}
+
+.right_link:hover:before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    border-color: #032F48;
+    background-color: #032F48;
 }
 header nav a, .right_link{
     color: inherit;
     text-decoration: none;
     font-weight: bold;
-}
-
-header hr{
-    margin: 0;
-    height: 1px;
-    width: 19px;
-    color: #151F32;
-    background: #151F32;
-    border: 0;
 }
 
 .right_link{
